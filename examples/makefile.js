@@ -1,5 +1,4 @@
-//var smoosh = require('smoosh');
-var smoosh = require('../');
+var smoosh = require('smoosh');
 
 smoosh
   .config('./config.json')
@@ -8,5 +7,5 @@ smoosh
   .build() //builds both uncompressed and compressed files
   .analyze() //analyzes all
    
-//or simply do all to do everything above
+//or simply do everything above with
 //smoosh.make('./config.json');
