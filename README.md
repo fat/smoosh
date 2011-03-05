@@ -51,6 +51,8 @@ CLEAN
 -----
 The clean method will remove your distribution directory
 
+	smoosh.clean();
+
 RUN
 ---
 Run takes one argument; a string which specifies what to run. Currently run only works with jslint, therefore you can do either:
