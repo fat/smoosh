@@ -10,8 +10,50 @@ to install smoosh do something like this:
 
     npm install smoosh
 
-USING SMOOSH
-============
+
+USING SMOOSH WITH TERMINAL
+==========================
+
+once installed with npm, smoosh can be accessed easily from the command line! Just create your config file (shown below), then run commands. Here's a list of some of them:
+
+
+	//any of these commands will execute all smoosh tasks with config.json
+	smoosh ./config.json
+	smoosh make ./config.json
+	smoosh -m ./config.json
+	
+	//executing either of these commands will destroy the dist folder
+	smoosh clean ./config.json
+	smoosh -d ./config.json
+	
+	//these will generate ugliyjs minified versions of your packaged source
+	smoosh compressed ./config.json
+	smoosh -c ./config.json
+	
+	//these will generate full, uncompressed version of your packaged source
+	smoosh uncompressed
+	smoosh -f ./config.json
+	
+	//executing either of these commands will build both compressed and uncompressed versions of your source
+	smoosh build ./config.json
+	smoosh -b ./config.json
+	
+	//these will run jshint against your uncompressed source
+	smoosh run ./config.json
+	smoosh -r ./config.json
+	
+	//the -a flag will run analyze.. you must include a build type for analyze to work
+	smoosh -ca ./config
+	smoosh -ba ./config
+	smoosh -fa ./config
+	
+	//as you might have guessed, you can specify multiple flags at the same time
+	smoosh -dba ./config //<-- this will clean the dist folder, build new files, and then analyze them
+	
+	
+
+USING SMOOSH WITH THE CODEZ 
+===========================
 
 once installed, smoosh is pretty easy to use...
 
