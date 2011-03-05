@@ -7,9 +7,9 @@
 [submodule "support/colors"]
 	path = support/colors
 	url = https://github.com/Marak/colors.js.git
-[submodule "support/jshint"]
-	path = support/jshint
-	url = https://github.com/jshint/jshint.git
 [submodule "support/rimraf"]
 	path = support/rimraf
 	url = https://github.com/isaacs/rimraf.git
+[submodule "support/jshint"]
+	path = support/jshint
+	url = https://github.com/jshint/jshint.git

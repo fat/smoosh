@@ -2,10 +2,17 @@
     "name": "smoosh"
   , "description": "a tool for packaging your javascript projects"
   , "version": "0.1.0"
-  , "author": "Jacob Thornton <jacobthornton@gmail.com>"
+  , "authors": ["Jacob Thornton <@fat>", "Dustin Diaz <@ded>"]
   , "keywords": ["packager", "packaging", "smoosher"]
   , "dependencies": {}
   , "directories": { "lib": "./lib/smoosh" }
   , "main": "./index.js"
-  , "engines": { "node": ">= 0.4.2" },\
+  , "engines": { "node": ">= 0.4.2" }
+  , "dependencies": { 
+      "colors": ">= 0.1.1"
+    , "gzip": ">= 0.9.5"
+    , "jshint": ">= 1.7.3"
+    , "rimraf": ">= 1.4.4"
+    , "UglifyJS": ">= 1.4.4"
+  }
 }
