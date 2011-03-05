@@ -1,4 +1,4 @@
-var smoosh = require('smoosh');
+var smoosh = require('../');
 
 smoosh
   .config('./config.json')
