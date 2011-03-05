@@ -10,11 +10,34 @@ to install smoosh do something like this:
 
     npm install smoosh
 
+CONFIG
+======
+Currently, smoosh requires a config.json file to work. Your config file should look something like this (check the examples folder for a working example):
+
+	{ 
+	  "VERSION": "0.1", //<-- optional
+	  "DIST_DIR": "dist", //<-- optional
+	  "JSHINT_OPTS": { ... }
+	  "SOURCES": { 
+	    "base": [ ... ],
+	    "secondary": [ ... ]
+	  }
+	}
+
+Your config options include:
+
+  + VERSION: an optional version number which will be appended to your built files
+  + SOURCES:
+	+ key: the name of your compiled file (ie: 'mootools-core', 'base-bundle', etc.)
+	+ value: an array of file paths to be bundled (ie. ['./src/drag.js', './src/drop.js'])
+  + DIST_DIR: the directory to output your files to (if no directory is specified, 'dist' will be used)
+  + JSHINT_OPTS: the options to use if running jshint
+
 
 USING SMOOSH WITH TERMINAL
 ==========================
 
-once installed with npm, smoosh can be accessed easily from the command line! Just create your config file (shown below), then run commands. Here's a list of some of them:
+once installed with npm, smoosh can be accessed easily from the command line! Just create your config file (shown above), then run commands. Here's a list of some of them:
 
 
 	//any of these commands will execute all smoosh tasks with config.json
@@ -63,31 +86,9 @@ Once required there are several methods available to you:
 
 CONFIG
 ------
+As stated above, smoosh requires that you pass it the path to your configuration json file. To do that, you would do:
 
-config requires that you pass it the path to your configuration json file. You cannot use smoosh without a config file.
-
-    smoosh.config('./config.json')
-
-your config file should look something like this (check the examples folder for a working example):
-
-	{ 
-	  "VERSION": "0.1",
-	  "SOURCES": { 
-	    "base": [ ... ],
-	    "secondary": [ ... ]
-	  },
-	  "DIST_DIR": "dist",
-	  "JSHINT_OPTS": { ... }
-	}
-
-Your config options include:
-
-  + VERSION: an optional version number which will be appended to your built files
-  + SOURCES:
-	+ key: the name of your compiled file (ie: 'mootools-core', 'base-bundle', etc.)
-	+ value: an array of file paths to be bundled (ie. ['./src/drag.js', './src/drop.js'])
-  + DIST_DIR: the directory to output your files to (if no directory is specified, 'dist' will be used)
-  + JSHINT_OPTS: the options to use if running jshint
+   smoosh.config('./config.json')
 
 CLEAN
 -----
