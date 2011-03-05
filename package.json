@@ -1,0 +1,11 @@
+{
+    "name": "smoosh"
+  , "description": "a tool for packaging your javascript projects"
+  , "version": "0.1.0"
+  , "author": "Jacob Thornton <jacobthornton@gmail.com>"
+  , "keywords": ["packager", "packaging", "smoosher"]
+  , "dependencies": {}
+  , "directories": { "lib": "./lib/smoosh" }
+  , "main": "./index.js"
+  , "engines": { "node": ">= 0.4.2" },\
+}
