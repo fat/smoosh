@@ -1,13 +1,13 @@
 {
     "name": "smoosh"
   , "description": "a tool for packaging your javascript projects"
-  , "version": "0.0.2"
+  , "version": "0.0.3"
   , "authors": ["Jacob Thornton <@fat>", "Dustin Diaz <@ded>"]
   , "keywords": ["packager", "packaging", "smoosher"]
   , "dependencies": {}
   , "directories": { "lib": "./lib/smoosh" }
   , "main": "./index.js"
-  , "engines": { "node": ">= 0.4.2" }
+  , "engines": { "node": ">= 0.4.1" }
   , "dependencies": { 
       "colors": ">= 0.3.0"
     , "gzip": ">= 0.1.0"
