@@ -1,0 +1,9 @@
+!!! 5
+html
+  head
+    title Jade Example
+    - scripts.forEach(function(script){
+      script(src: script)
+    - })
+    link(rel="stylesheet", href="/stylesheets/style.css")
+  body!= body

@@ -1,0 +1,35 @@
+{
+
+  "SILENT": true,
+  "STATIC_DIR": "public",
+
+  "JAVASCRIPT": {
+
+    "DIST_DIR": "/js/production",
+
+    "third-party": [
+      "/js/jquery.js",
+      "/js/underscore.js",
+      "/js/modernizr.js",
+      "/js/noisy.js"
+    ],
+
+    "application": [
+      "/js/application-1.js",
+      "/js/application-2.js"
+    ]
+
+  },
+
+  "CSS": {
+
+    "DIST_DIR": "/stylesheets/production",
+
+    "application": [
+      "/stylesheets/header.css",
+      "/stylesheets/body.css"
+    ]
+
+  }
+
+}
