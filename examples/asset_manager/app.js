@@ -4,18 +4,17 @@
   * note: use "NODE_ENV=production node app.js" to run app in production
   */
 
-var express = require('express')
-  // require smoosh and pass config
-  , smoosh = require('../../').config('./asset_packages.json');
+var express = require('express');
 
 var app = express.createServer(
-  express.static(__dirname + '/public')
+  express.static(__dirname + '/public'),
+  function(req, res, next){
+    //https://github.com/senchalabs/connect/blob/master/lib/middleware/favicon.js
+    //you will check a load url against your source, if it exists, intercept and return minified/ boosh.
+    console.log(app.settings.env);
+    next();
+  }
 );
-
-app.configure('production', function(){
-  //build minified packages for production env otherwise serve unminified files
-  smoosh.clean().build('min');
-});
 
 app.set('view engine', 'jade');
 
@@ -25,11 +24,8 @@ var scripts
     , { name: 'fat', email: 'jacob@twitter.com' }
   ];
 
-
-app.get('/', function(req, res){
-  //memoize and serve last built scripts || raw sources
-  scripts = scripts || smoosh.get('JAVASCRIPT').latest; //or specify smoosh.get('JAVASCRIPT').compressed;
-  res.render('users', { scripts: scripts, users: users });
+app.get('/', function (req, res) {
+  res.render('users', { scripts: [], users: users });
 });
 
 app.listen(3000);

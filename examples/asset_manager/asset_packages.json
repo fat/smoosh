@@ -1,33 +1,34 @@
 {
 
   "SILENT": true,
-  "STATIC_DIR": "public",
 
   "JAVASCRIPT": {
 
-    "DIST_DIR": "/js/production",
+    "STATIC_DIR": "public",
+    "DIST_DIR": "js/production",
 
     "third-party": [
-      "/js/jquery.js",
-      "/js/underscore.js",
-      "/js/modernizr.js",
-      "/js/noisy.js"
+      "js/jquery",
+      "js/underscore",
+      "js/modernizr",
+      "js/noisy"
     ],
 
     "application": [
-      "/js/application-1.js",
-      "/js/application-2.js"
+      "js/application-1",
+      "js/application-2"
     ]
 
   },
 
   "CSS": {
 
-    "DIST_DIR": "/stylesheets/production",
+    "STATIC_DIR": "public",
+    "DIST_DIR": "css/production",
 
     "application": [
-      "/stylesheets/header.css",
-      "/stylesheets/body.css"
+      "css/header",
+      "css/body"
     ]
 
   }
