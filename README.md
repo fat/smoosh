@@ -6,7 +6,7 @@ How would you smoosh a lion and a tiger? A tialiganer, right?
 
 SMOOSH is a tool for packaging your javascript projects... it will run jshint against your files, then build and minify your files if you'd like.  
 
-to install smoosh do something like this:  
+to install smoosh do something like this...
 
     npm install smoosh
 
