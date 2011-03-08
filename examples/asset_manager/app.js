@@ -8,12 +8,7 @@ var express = require('express');
 
 var app = express.createServer(
   express.static(__dirname + '/public'),
-  function(req, res, next){
-    //https://github.com/senchalabs/connect/blob/master/lib/middleware/favicon.js
-    //you will check a load url against your source, if it exists, intercept and return minified/ boosh.
-    console.log(app.settings.env);
-    next();
-  }
+  require('../../').connect('assets.json')
 );
 
 app.set('view engine', 'jade');
@@ -25,7 +20,7 @@ var scripts
   ];
 
 app.get('/', function (req, res) {
-  res.render('users', { scripts: [], users: users });
+  res.render('users', { users: users });
 });
 
 app.listen(3000);

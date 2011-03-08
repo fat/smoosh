@@ -2,8 +2,7 @@
 html
   head
     title Jade Example
-    - scripts.forEach(function(script){
-      script(src: script)
-    - })
-    link(rel="stylesheet", href="/stylesheets/style.css")
+    script(src="third-party")
+    script(src="application")
+    link(rel="stylesheet", href="application")
   body!= body
