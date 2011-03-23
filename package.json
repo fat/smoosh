@@ -1,7 +1,7 @@
 {
   "name": "smoosh",
   "description": "a tool for packaging your javascript projects",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "authors": ["Jacob Thornton <@fat>", "Dustin Diaz <@ded>"],
   "keywords": ["packager", "packaging", "smoosher"],
   "directories": { "lib": "./lib/smoosh" },
