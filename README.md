@@ -16,9 +16,9 @@ Currently, smoosh requires a config.json file to work. Your config file should l
 
     {
       "VERSION": "0.1", // optional
-      "DIST_DIR": "dist", // optional
       "JSHINT_OPTS": { ... }
       "JAVASCRIPT": {
+        "DIST_DIR": "dist", // optional
         "base": [ ... ],
         "secondary": [ ... ]
       }
