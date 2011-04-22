@@ -1,18 +1,18 @@
-[submodule "support/UglifyJS"]
-	path = support/UglifyJS
+[submodule "lib/support/UglifyJS"]
+	path = lib/support/UglifyJS
 	url = https://github.com/mishoo/UglifyJS
-[submodule "support/colors"]
-	path = support/colors
+[submodule "lib/support/colors"]
+	path = lib/support/colors
 	url = https://github.com/Marak/colors.js.git
-[submodule "support/rimraf"]
-	path = support/rimraf
+[submodule "lib/support/rimraf"]
+	path = lib/support/rimraf
 	url = https://github.com/isaacs/rimraf.git
-[submodule "support/jshint"]
-	path = support/jshint
+[submodule "lib/support/jshint"]
+	path = lib/support/jshint
 	url = https://github.com/jshint/jshint.git
-[submodule "support/gzip"]
-	path = support/gzip
+[submodule "lib/support/gzip"]
+	path = lib/support/gzip
 	url = https://github.com/donnerjack13589/node.gzip.git
-[submodule "support/asciimo"]
-	path = support/asciimo
+[submodule "lib/support/asciimo"]
+	path = lib/support/asciimo
 	url = https://github.com/Marak/asciimo.git
