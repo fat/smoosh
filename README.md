@@ -4,11 +4,11 @@ How would you smoosh a lion and a tiger? A tialiganer, right?
 
 ![smoosh](http://f.cl.ly/items/3o0y3m3o2Z3l1e0i1V2V/Screen%20shot%202011-03-05%20at%2012.13.54%20AM.png)
 
-SMOOSH is a tool for packaging your javascript projects... it will run [JSHint](http://jshint.com) against your files, then build and minify your files if you'd like with [UglifyJS](https://github.com/mishoo/UglifyJS)
+SMOOSH is a tool for packaging your CSS & JavaScript projects. It will lint your JavaScript with [JSHint](http://jshint.com), then build and minify your files (if you'd like) with [UglifyJS](https://github.com/mishoo/UglifyJS)
 
-to install smoosh do something like this...
+Smoosh is available as an npm package. To install, run the following command:
 
-    npm install smoosh
+    $ npm install smoosh
 
 CONFIG
 ======
@@ -21,15 +21,18 @@ Currently, smoosh requires a config.json file to work. Your config file should l
         "DIST_DIR": "dist", // optional
         "base": [ ... ],
         "secondary": [ ... ]
+      },
+      "CSS": {
+        "core": [ ... ]
       }
     }
 
 Your config options include:
 
-  + VERSION: an optional version number which will be appended to your built files
-  + JAVASCRIPT:
-  + key: the name of your compiled file (ie: 'mootools-core', 'base-bundle', etc.)
-  + value: an array of file paths to be bundled (ie. ['./src/drag.js', './src/drop.js'])
+  * VERSION: an optional version number which will be appended to your built files
+  * JAVASCRIPT|CSS:
+  * key: the name of your compiled file (ie: 'mootools-core', 'base-bundle', etc.)
+  * value: an array of file paths to be bundled (ie. <code>['./src/drag.js', './src/drop.js']</code>)
   + DIST_DIR: the directory to output your files to (if no directory is specified, 'dist' will be used)
   + JSHINT_OPTS: the options to use if running jshint
 
@@ -82,19 +85,19 @@ once installed, smoosh is pretty easy to use...
 
 Once required there are several methods available to you:
 
-CONFIG
+<code>config</code>
 ------
 As stated above, smoosh requires that you pass it the path to your configuration json file. To do that, you would do:
 
     smoosh.config('./config.json')
 
-CLEAN
+<code>clean</code>
 -----
 The clean method will remove your distribution directory. **Warning** This will empty your entire DIST directory. So this may be unwanted behavior if your DIST directory is "./". It is preferred that this is only used when you have a dedicated dist folder. Eg: "./src/build" or "./dist"
 
     smoosh.clean();
 
-RUN
+<code>run</code>
 ---
 Run takes one argument; a string which specifies what to run. Currently run only works with jslint, therefore you can do either:
 
@@ -106,7 +109,7 @@ Run takes one argument; a string which specifies what to run. Currently run only
 
 In the future we may add more useful things here.
 
-BUILD
+<code>build</code>
 -----
 Build is used to build your sources together. You can build uncompressed or compressed files or both! You can use it like this:
 
@@ -121,9 +124,9 @@ Build is used to build your sources together. You can build uncompressed or comp
     smoosh.build() // <-- this will build both compressed and uncompressed
 
 
-ANALYZE
+<code>analyze</code>
 -------
-Analyzed is useful when you're curious if you're making your files larger or smaller. It will return relevant file size for uncompressed, compressed, or gzipped files.
+Analyze is useful when you're curious if you're making your files larger or smaller. It will return relevant file size for uncompressed, compressed, or gzipped files.
 
     smoosh.analyze('uncompressed');
 
@@ -139,7 +142,7 @@ Analyzed is useful when you're curious if you're making your files larger or sma
 
     smoosh.analyze(); //which will do analyze all types
 
-MAKE
+<code>make</code>
 ----
 Make can currently be used as a shortcut to run all smoosh methods... It requires one argument, the path to the config file.json.
 
@@ -147,7 +150,3 @@ Make can currently be used as a shortcut to run all smoosh methods... It require
 
     //is the same as
     smoosh.config('./config.json').run().build().analyze();
-
-CHAINING
---------
-Note: that smoosh supports chaining, if you're into that sorta thing.
