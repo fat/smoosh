@@ -16,3 +16,6 @@
 [submodule "support/asciimo"]
 	path = support/asciimo
 	url = https://github.com/Marak/asciimo.git
+[submodule "support/sqwish"]
+	path = support/sqwish
+	url = git://github.com/ded/sqwish.git
