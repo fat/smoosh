@@ -1,0 +1,462 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+info using npm@1.0.13
+info using node@v0.4.9
+verbose config file /Users/jacob/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose publish [ '.' ]
+silly testEngine { name: 'smoosh',
+silly testEngine   preferGlobal: 'true',
+silly testEngine   description: 'a tool for packaging your JavaScript and CSS projects',
+silly testEngine   version: '0.3.0',
+silly testEngine   authors: [ 'Jacob Thornton <@fat>', 'Dustin Diaz <@ded>' ],
+silly testEngine   keywords: 
+silly testEngine    [ 'packager',
+silly testEngine      'packaging',
+silly testEngine      'smoosher',
+silly testEngine      'javascript',
+silly testEngine      'css',
+silly testEngine      'dependencies' ],
+silly testEngine   directories: { lib: './lib/smoosh' },
+silly testEngine   main: './index.js',
+silly testEngine   engines: { node: '>= 0.4.1' },
+silly testEngine   dependencies: 
+silly testEngine    { colors: '>= 0.3.0',
+silly testEngine      gzip: '>= 0.1.0',
+silly testEngine      jshint: '>= 0.1.4',
+silly testEngine      rimraf: '>= 1.0.0',
+silly testEngine      'uglify-js': '>= 0.0.1',
+silly testEngine      asciimo: '>= 0.3.1',
+silly testEngine      sqwish: '>= 0.0.6' },
+silly testEngine   bin: { smoosh: './bin/smoosh' },
+silly testEngine   _npmJsonOpts: 
+silly testEngine    { file: 'package.json',
+silly testEngine      wscript: false,
+silly testEngine      contributors: false,
+silly testEngine      serverjs: false },
+silly testEngine   _id: 'smoosh@0.3.0',
+silly testEngine   devDependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.13',
+silly testEngine   _nodeVersion: 'v0.4.9',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/Users/jacob/workspace/smoosh' }
+verbose caching package.json
+verbose loadDefaults smoosh@0.3.0
+verbose pack /Users/jacob/workspace/smoosh /tmp/npm-1314932736466/1314932736466-0.8879189996514469/tmp.tgz
+verbose umasking from 27 755
+verbose mkdir done: /tmp/npm-1314932736466/1314932736466-0.8879189996514469 755
+verbose mkdir'ed /tmp/npm-1314932736466/1314932736466-0.8879189996514469
+verbose tar about to write tar and gzip it.
+silly tar args [ '-cvf',
+silly tar args   '-',
+silly tar args   'smoosh/.gitignore',
+silly tar args   'smoosh/index.js',
+silly tar args   'smoosh/package.json',
+silly tar args   'smoosh/README.md',
+silly tar args   'smoosh/bin/smoosh',
+silly tar args   'smoosh/lib/smoosh/index.js',
+silly tar args   'smoosh/examples/config_json/.css',
+silly tar args   'smoosh/examples/config_json/config.json',
+silly tar args   'smoosh/examples/config_json/makefile.js',
+silly tar args   'smoosh/examples/config_json/dist/base-0.0.1.js',
+silly tar args   'smoosh/examples/config_json/dist/base-0.0.1.min.js',
+silly tar args   'smoosh/examples/config_json/dist/secondary-0.0.1.js',
+silly tar args   'smoosh/examples/config_json/dist/secondary-0.0.1.min.js',
+silly tar args   'smoosh/examples/config_json/dist/styles-0.0.1.css',
+silly tar args   'smoosh/examples/config_json/dist/styles-0.0.1.min.css',
+silly tar args   'smoosh/examples/config_json/src/bar.css',
+silly tar args   'smoosh/examples/config_json/src/foo.bar.baz.js',
+silly tar args   'smoosh/examples/config_json/src/foo.bar.js',
+silly tar args   'smoosh/examples/config_json/src/foo.css',
+silly tar args   'smoosh/examples/config_json/src/foo.js',
+silly tar args   'smoosh/examples/config_json/src/header.js',
+silly tar args   'smoosh/examples/config_json/src/script.js',
+silly tar args   'smoosh/examples/object_literal/.css',
+silly tar args   'smoosh/examples/object_literal/makefile.js',
+silly tar args   'smoosh/examples/object_literal/dist/base-0.0.1.js',
+silly tar args   'smoosh/examples/object_literal/dist/base-0.0.1.min.js',
+silly tar args   'smoosh/examples/object_literal/dist/secondary-0.0.1.js',
+silly tar args   'smoosh/examples/object_literal/dist/secondary-0.0.1.min.js',
+silly tar args   'smoosh/examples/object_literal/src/foo.bar.baz.js',
+silly tar args   'smoosh/examples/object_literal/src/foo.bar.js',
+silly tar args   'smoosh/examples/object_literal/src/foo.js',
+silly tar args   'smoosh/examples/object_literal/src/header.js',
+silly tar args   'smoosh/examples/object_literal/src/script.js' ]
+verbose success tar -cvf - <file list elided>
+verbose success gzip "--stdout"
+verbose mkdir done: /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm 755
+verbose unpack_ uid, gid [ 503, 20 ]
+verbose unpackTarget /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/package
+silly gunzTarPerm modes [ '755', '644' ]
+verbose success gzip "--decompress" "--stdout" "/tmp/npm-1314932736466/1314932736466-0.8879189996514469/tmp.tgz"
+verbose success tar "-mvxpf" "-" "--no-same-owner" "-C" "/tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm"
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/.gitignore
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/index.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/package.json
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/README.md
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/bin/
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/bin/smoosh
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/lib/
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/lib/smoosh/
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/lib/smoosh/index.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/.css
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/config.json
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/makefile.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/dist/
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/dist/base-0.0.1.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/dist/base-0.0.1.min.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/dist/secondary-0.0.1.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/dist/secondary-0.0.1.min.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/dist/styles-0.0.1.css
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/dist/styles-0.0.1.min.css
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/src/
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/src/bar.css
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/src/foo.bar.baz.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/src/foo.bar.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/src/foo.css
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/src/foo.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/src/header.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/config_json/src/script.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/object_literal/
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/object_literal/.css
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/object_literal/makefile.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/object_literal/dist/
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/object_literal/dist/base-0.0.1.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/object_literal/dist/base-0.0.1.min.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/object_literal/dist/secondary-0.0.1.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/object_literal/dist/secondary-0.0.1.min.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/object_literal/src/
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/object_literal/src/foo.bar.baz.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/object_literal/src/foo.bar.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/object_literal/src/foo.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/object_literal/src/header.js
+silly asyncMap in gTP /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh/examples/object_literal/src/script.js
+silly chmod smoosh/ 755
+silly chmod .gitignore 644
+silly chmod index.js 644
+silly chmod package.json 644
+silly chmod README.md 644
+silly chmod bin/ 755
+silly chmod smoosh 644
+silly chmod lib/ 755
+silly chmod smoosh/ 755
+silly chmod index.js 644
+silly chmod examples/ 755
+silly chmod config_json/ 755
+silly chmod .css 644
+silly chmod config.json 644
+silly chmod makefile.js 644
+silly chmod dist/ 755
+silly chmod base-0.0.1.js 644
+silly chmod base-0.0.1.min.js 644
+silly chmod secondary-0.0.1.js 644
+silly chmod secondary-0.0.1.min.js 644
+silly chmod styles-0.0.1.css 644
+silly chmod styles-0.0.1.min.css 644
+silly chmod src/ 755
+silly chmod bar.css 644
+silly chmod foo.bar.baz.js 644
+silly chmod foo.bar.js 644
+silly chmod foo.css 644
+silly chmod foo.js 644
+silly chmod header.js 644
+silly chmod script.js 644
+silly chmod object_literal/ 755
+silly chmod .css 644
+silly chmod makefile.js 644
+silly chmod dist/ 755
+silly chmod base-0.0.1.js 644
+silly chmod base-0.0.1.min.js 644
+silly chmod secondary-0.0.1.js 644
+silly chmod secondary-0.0.1.min.js 644
+silly chmod src/ 755
+silly chmod foo.bar.baz.js 644
+silly chmod foo.bar.js 644
+silly chmod foo.js 644
+silly chmod header.js 644
+silly chmod script.js 644
+verbose gunzed /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh
+verbose rm'ed /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/package
+verbose renamed [ '/tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/___package.npm/smoosh',
+verbose renamed   '/tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/package' ]
+silly testEngine { name: 'smoosh',
+silly testEngine   preferGlobal: 'true',
+silly testEngine   description: 'a tool for packaging your JavaScript and CSS projects',
+silly testEngine   version: '0.3.0',
+silly testEngine   authors: [ 'Jacob Thornton <@fat>', 'Dustin Diaz <@ded>' ],
+silly testEngine   keywords: 
+silly testEngine    [ 'packager',
+silly testEngine      'packaging',
+silly testEngine      'smoosher',
+silly testEngine      'javascript',
+silly testEngine      'css',
+silly testEngine      'dependencies' ],
+silly testEngine   directories: { lib: './lib/smoosh' },
+silly testEngine   main: './index.js',
+silly testEngine   engines: { node: '>= 0.4.1' },
+silly testEngine   dependencies: 
+silly testEngine    { colors: '>= 0.3.0',
+silly testEngine      gzip: '>= 0.1.0',
+silly testEngine      jshint: '>= 0.1.4',
+silly testEngine      rimraf: '>= 1.0.0',
+silly testEngine      'uglify-js': '>= 0.0.1',
+silly testEngine      asciimo: '>= 0.3.1',
+silly testEngine      sqwish: '>= 0.0.6' },
+silly testEngine   bin: { smoosh: './bin/smoosh' },
+silly testEngine   _npmJsonOpts: 
+silly testEngine    { file: '/tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/package/package.json',
+silly testEngine      wscript: false,
+silly testEngine      contributors: false,
+silly testEngine      serverjs: false },
+silly testEngine   _id: 'smoosh@0.3.0',
+silly testEngine   devDependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.13',
+silly testEngine   _nodeVersion: 'v0.4.9',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/package' }
+verbose caching /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/package/package.json
+verbose loadDefaults smoosh@0.3.0
+verbose tarball contents [ 'package' ]
+verbose from cache /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/package/package.json
+verbose pack /tmp/npm-1314932736466/1314932736466-0.8879189996514469/contents/package /Users/jacob/.npm/smoosh/0.3.0/package.tgz
+verbose mkdir done: /Users/jacob/.npm/smoosh/0.3.0 755
+verbose mkdir'ed /Users/jacob/.npm/smoosh/0.3.0
+verbose tar about to write tar and gzip it.
+silly tar args [ '-cvf',
+silly tar args   '-',
+silly tar args   'package/.gitignore',
+silly tar args   'package/index.js',
+silly tar args   'package/package.json',
+silly tar args   'package/README.md',
+silly tar args   'package/bin/smoosh',
+silly tar args   'package/lib/smoosh/index.js',
+silly tar args   'package/examples/config_json/.css',
+silly tar args   'package/examples/config_json/config.json',
+silly tar args   'package/examples/config_json/makefile.js',
+silly tar args   'package/examples/config_json/dist/base-0.0.1.js',
+silly tar args   'package/examples/config_json/dist/base-0.0.1.min.js',
+silly tar args   'package/examples/config_json/dist/secondary-0.0.1.js',
+silly tar args   'package/examples/config_json/dist/secondary-0.0.1.min.js',
+silly tar args   'package/examples/config_json/dist/styles-0.0.1.css',
+silly tar args   'package/examples/config_json/dist/styles-0.0.1.min.css',
+silly tar args   'package/examples/config_json/src/bar.css',
+silly tar args   'package/examples/config_json/src/foo.bar.baz.js',
+silly tar args   'package/examples/config_json/src/foo.bar.js',
+silly tar args   'package/examples/config_json/src/foo.css',
+silly tar args   'package/examples/config_json/src/foo.js',
+silly tar args   'package/examples/config_json/src/header.js',
+silly tar args   'package/examples/config_json/src/script.js',
+silly tar args   'package/examples/object_literal/.css',
+silly tar args   'package/examples/object_literal/makefile.js',
+silly tar args   'package/examples/object_literal/dist/base-0.0.1.js',
+silly tar args   'package/examples/object_literal/dist/base-0.0.1.min.js',
+silly tar args   'package/examples/object_literal/dist/secondary-0.0.1.js',
+silly tar args   'package/examples/object_literal/dist/secondary-0.0.1.min.js',
+silly tar args   'package/examples/object_literal/src/foo.bar.baz.js',
+silly tar args   'package/examples/object_literal/src/foo.bar.js',
+silly tar args   'package/examples/object_literal/src/foo.js',
+silly tar args   'package/examples/object_literal/src/header.js',
+silly tar args   'package/examples/object_literal/src/script.js' ]
+verbose success tar -cvf - <file list elided>
+verbose success gzip "--stdout"
+verbose mkdir done: /Users/jacob/.npm/smoosh/0.3.0/___package.npm 755
+verbose unpack_ uid, gid [ 503, 20 ]
+verbose unpackTarget /Users/jacob/.npm/smoosh/0.3.0/package
+silly gunzTarPerm modes [ '755', '644' ]
+verbose success gzip "--decompress" "--stdout" "/Users/jacob/.npm/smoosh/0.3.0/package.tgz"
+verbose success tar "-mvxpf" "-" "--no-same-owner" "-C" "/Users/jacob/.npm/smoosh/0.3.0/___package.npm"
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/.gitignore
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/index.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/package.json
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/README.md
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/bin/
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/bin/smoosh
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/lib/
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/lib/smoosh/
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/lib/smoosh/index.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/.css
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/config.json
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/makefile.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/dist/
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/dist/base-0.0.1.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/dist/base-0.0.1.min.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/dist/secondary-0.0.1.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/dist/secondary-0.0.1.min.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/dist/styles-0.0.1.css
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/dist/styles-0.0.1.min.css
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/src/
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/src/bar.css
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/src/foo.bar.baz.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/src/foo.bar.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/src/foo.css
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/src/foo.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/src/header.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/config_json/src/script.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/object_literal/
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/object_literal/.css
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/object_literal/makefile.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/object_literal/dist/
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/object_literal/dist/base-0.0.1.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/object_literal/dist/base-0.0.1.min.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/object_literal/dist/secondary-0.0.1.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/object_literal/dist/secondary-0.0.1.min.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/object_literal/src/
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/object_literal/src/foo.bar.baz.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/object_literal/src/foo.bar.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/object_literal/src/foo.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/object_literal/src/header.js
+silly asyncMap in gTP /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package/examples/object_literal/src/script.js
+silly chmod package/ 755
+silly chmod bin/ 755
+silly chmod lib/ 755
+silly chmod smoosh/ 755
+silly chmod examples/ 755
+silly chmod config_json/ 755
+silly chmod dist/ 755
+silly chmod src/ 755
+silly chmod object_literal/ 755
+silly chmod dist/ 755
+silly chmod src/ 755
+verbose gunzed /Users/jacob/.npm/smoosh/0.3.0/___package.npm/package
+verbose rm'ed /Users/jacob/.npm/smoosh/0.3.0/package
+verbose renamed [ '/Users/jacob/.npm/smoosh/0.3.0/___package.npm/package',
+verbose renamed   '/Users/jacob/.npm/smoosh/0.3.0/package' ]
+silly testEngine { name: 'smoosh',
+silly testEngine   preferGlobal: 'true',
+silly testEngine   description: 'a tool for packaging your JavaScript and CSS projects',
+silly testEngine   version: '0.3.0',
+silly testEngine   authors: [ 'Jacob Thornton <@fat>', 'Dustin Diaz <@ded>' ],
+silly testEngine   keywords: 
+silly testEngine    [ 'packager',
+silly testEngine      'packaging',
+silly testEngine      'smoosher',
+silly testEngine      'javascript',
+silly testEngine      'css',
+silly testEngine      'dependencies' ],
+silly testEngine   directories: { lib: './lib/smoosh' },
+silly testEngine   main: './index.js',
+silly testEngine   engines: { node: '>= 0.4.1' },
+silly testEngine   dependencies: 
+silly testEngine    { colors: '>= 0.3.0',
+silly testEngine      gzip: '>= 0.1.0',
+silly testEngine      jshint: '>= 0.1.4',
+silly testEngine      rimraf: '>= 1.0.0',
+silly testEngine      'uglify-js': '>= 0.0.1',
+silly testEngine      asciimo: '>= 0.3.1',
+silly testEngine      sqwish: '>= 0.0.6' },
+silly testEngine   bin: { smoosh: './bin/smoosh' },
+silly testEngine   _npmJsonOpts: 
+silly testEngine    { file: '/Users/jacob/.npm/smoosh/0.3.0/package/package.json',
+silly testEngine      wscript: false,
+silly testEngine      contributors: false,
+silly testEngine      serverjs: false },
+silly testEngine   _id: 'smoosh@0.3.0',
+silly testEngine   devDependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.13',
+silly testEngine   _nodeVersion: 'v0.4.9',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   dist: 
+silly testEngine    { shasum: '97769e2698864dc3f32af50bece7712afc3bbc5b',
+silly testEngine      tarball: 'http://registry.npmjs.org/smoosh/-/smoosh-0.3.0.tgz' },
+silly testEngine   scripts: {} }
+verbose caching /Users/jacob/.npm/smoosh/0.3.0/package/package.json
+verbose loadDefaults smoosh@0.3.0
+silly updated sha bytes 10706
+info shasum 97769e2698864dc3f32af50bece7712afc3bbc5b
+info shasum /Users/jacob/.npm/smoosh/0.3.0/package.tgz
+verbose from cache /Users/jacob/.npm/smoosh/0.3.0/package/package.json
+verbose chmod /Users/jacob/.npm/smoosh/0.3.0/package.tgz 644
+silly publish { name: 'smoosh',
+silly publish   preferGlobal: 'true',
+silly publish   description: 'a tool for packaging your JavaScript and CSS projects',
+silly publish   version: '0.3.0',
+silly publish   authors: [ 'Jacob Thornton <@fat>', 'Dustin Diaz <@ded>' ],
+silly publish   keywords: 
+silly publish    [ 'packager',
+silly publish      'packaging',
+silly publish      'smoosher',
+silly publish      'javascript',
+silly publish      'css',
+silly publish      'dependencies' ],
+silly publish   directories: { lib: './lib/smoosh' },
+silly publish   main: './index.js',
+silly publish   engines: { node: '>= 0.4.1' },
+silly publish   dependencies: 
+silly publish    { colors: '>= 0.3.0',
+silly publish      gzip: '>= 0.1.0',
+silly publish      jshint: '>= 0.1.4',
+silly publish      rimraf: '>= 1.0.0',
+silly publish      'uglify-js': '>= 0.0.1',
+silly publish      asciimo: '>= 0.3.1',
+silly publish      sqwish: '>= 0.0.6' },
+silly publish   bin: { smoosh: './bin/smoosh' },
+silly publish   _npmJsonOpts: 
+silly publish    { file: '/Users/jacob/.npm/smoosh/0.3.0/package/package.json',
+silly publish      wscript: false,
+silly publish      contributors: false,
+silly publish      serverjs: false },
+silly publish   _id: 'smoosh@0.3.0',
+silly publish   devDependencies: {},
+silly publish   _engineSupported: true,
+silly publish   _npmVersion: '1.0.13',
+silly publish   _nodeVersion: 'v0.4.9',
+silly publish   _defaultsLoaded: true,
+silly publish   dist: 
+silly publish    { shasum: '97769e2698864dc3f32af50bece7712afc3bbc5b',
+silly publish      tarball: 'http://registry.npmjs.org/smoosh/-/smoosh-0.3.0.tgz' },
+silly publish   scripts: {} }
+info prepublish smoosh@0.3.0
+verbose PUT smoosh
+verbose raw, before any munging smoosh
+verbose url resolving [ 'http://registry.npmjs.org/', './smoosh' ]
+verbose url resolved http://registry.npmjs.org/smoosh
+verbose url parsed { protocol: 'http:',
+verbose url parsed   slashes: true,
+verbose url parsed   host: 'registry.npmjs.org',
+verbose url parsed   hostname: 'registry.npmjs.org',
+verbose url parsed   href: 'http://registry.npmjs.org/smoosh',
+verbose url parsed   pathname: '/smoosh' }
+WARN Sending authorization over insecure channel.
+silly writing json { _id: 'smoosh',
+silly writing json   name: 'smoosh',
+silly writing json   description: 'a tool for packaging your JavaScript and CSS projects',
+silly writing json   'dist-tags': {},
+silly writing json   versions: {},
+silly writing json   maintainers: [ { name: 'fat', email: 'jacobthornton@gmail.com' } ] }
+verbose response http://registry.npmjs.org/smoosh
+silly chunk {"error":"conflict","reason":"Document update conflict."}
+silly chunk 
+verbose GET smoosh
+verbose raw, before any munging smoosh
+verbose url resolving [ 'http://registry.npmjs.org/', './smoosh' ]
+verbose url resolved http://registry.npmjs.org/smoosh
+verbose url parsed { protocol: 'http:',
+verbose url parsed   slashes: true,
+verbose url parsed   host: 'registry.npmjs.org',
+verbose url parsed   hostname: 'registry.npmjs.org',
+verbose url parsed   href: 'http://registry.npmjs.org/smoosh',
+verbose url parsed   pathname: '/smoosh' }
+verbose response http://registry.npmjs.org/smoosh
+silly chunk {"_id":"smoosh","_rev":"32-cd82bd855539281cecabb4b4df0a9d11","name":"smoosh","description":"a tool for packaging your JavaScript and CSS projects","dist-tags":{"latest":"0.3.0"},"versions":{"0.0.1":{"name":"smoosh","description":"a tool for packaging your javascript projects","version":"0.0.1","authors":["Jacob Thornton <@fat>","Dustin Diaz <@ded>"],"keywords":["packager","packaging","smoosher"],"dependencies":{"colors":">= 0.3.0","gzip":">= 0.1.0","jshint":">= 0.1.4","rimraf":">= 1.0.0","uglify-js":">= 0.0.1"},"directories":{"lib":"./lib/smoosh"},"main":"./index.js","engines":{"node":">= 0.4.2"},"_id":"smoosh@0.0.1","_engineSupported":true,"_npmVersion":"0.3.14","_nodeVersion":"v0.4.2","files":[""],"_defaultsLoaded":true,"dist":{"shasum":"334fdd0b4b13344798f20b00034730cf2d9ad414","tarball":"http://registry.npmjs.org/smoosh/-/smoosh-0.0.1.tgz"}},"0.0.2":{"name":"smoosh","description":"a tool for packaging your javascript projects","version":"0.0.2","authors":["Jacob Thornton <@fat>","Dustin Diaz <@ded>"],"keywords":["packager","packaging","smoosher"],"dependencies":{"colors":">= 0.3.0","gzip":">= 0.1.0","jshint":">= 0.1.4","rimraf":">= 1.0.0","uglify-js":">= 0.0.1"},"directories":{"lib":"./lib/smoosh"},"main":"./index.js","engines":{"node":">= 0.4.2"},"_id":"smoosh@0.0.2","_engineSupported":true,"_npmVersion":"0.3.14","_nodeVersion":"v0.4.2","files":[""],"_defaultsLoaded":true,"dist":{"shasum":"ae5e58f4f365af3b7a1936ba72b894ee8be7e6c9","tarball":"http://registry.npmjs.org/smoosh/-/smoosh-0.0.2.tgz"}},"0.0.3":{"name":"smoosh","description":"a tool for packaging your javascript projects","version":"0.0.3","authors":["Jacob Thornton <@fat>","Dustin Diaz <@ded>"],"keywords":["packager","packaging","smoosher"],"dependencies":{"colors":">= 0.3.0","gzip":">= 0.1.0","jshint":">= 0.1.4","rimraf":">= 1.0.0","uglify-js":">= 0.0.1"},"directories":{"lib":"./lib/smoosh"},"main":"./index.js","engines":{"node":">= 0.4.1"},"_id":"smoosh@0.0.3","_engineSupported":true,"_npmVersion":"0.3.14","_nodeVersion":"v0.4.2","files":[""],"_defaultsLoaded":true,"dist":{"shasum":"d56a335dbad8123a891dda8843215fca7efe3b9d","tarball":"http://registry.npmjs.org/smoosh/-/smoosh-0.0.3.tgz"}},"0.0.4":{"name":"smoosh","description":"a tool for packaging your javascript projects","version":"0.0.4","authors":["Jacob Thornton <@fat>","Dustin Diaz <@ded>"],"keywords":["packager","packaging","smoosher"],"dependencies":{"colors":">= 0.3.0","gzip":">= 0.1.0","jshint":">= 0.1.4","rimraf":">= 1.0.0","uglify-js":">= 0.0.1"},"directories":{"lib":"./lib/smoosh"},"main":"./index.js","engines":{"node":">= 0.4.1"},"_id":"smoosh@0.0.4","_engineSupported":true,"_npmVersion":"0.3.14","_nodeVersion":"v0.4.2","file
+silly chunk s":[""],"_defaultsLoaded":true,"dist":{"shasum":"751a29a7b36a0582645c6e050f48c1e2ef3ed411","tarball":"http://registry.npmjs.org/smoosh/-/smoosh-0.0.4.tgz"}},"0.0.5":{"name":"smoosh","description":"a tool for packaging your javascript projects","version":"0.0.5","authors":["Jacob Thornton <@fat>","Dustin Diaz <@ded>"],"keywords":["packager","packaging","smoosher"],"dependencies":{"colors":">= 0.3.0","gzip":">= 0.1.0","jshint":">= 0.1.4","rimraf":">= 1.0.0","uglify-js":">= 0.0.1","asciimo":">= 0.3.1"},"directories":{"lib":"./lib/smoosh","bin":"./bin"},"main":"./index.js","engines":{"node":">= 0.4.1"},"bin":{"smoosh":"./bin/smoosh"},"_id":"smoosh@0.0.5","_engineSupported":true,"_npmVersion":"0.3.14","_nodeVersion":"v0.4.2","files":[""],"_defaultsLoaded":true,"dist":{"shasum":"9f20485700d94ae63791f2d3a8d8d3d29a9f0186","tarball":"http://registry.npmjs.org/smoosh/-/smoosh-0.0.5.tgz"}},"0.0.6":{"name":"smoosh","description":"a tool for packaging your javascript projects","version":"0.0.6","authors":["Jacob Thornton <@fat>","Dustin Diaz <@ded>"],"keywords":["packager","packaging","smoosher"],"dependencies":{"colors":">= 0.3.0","gzip":">= 0.1.0","jshint":">= 0.1.4","rimraf":">= 1.0.0","uglify-js":">= 0.0.1","asciimo":">= 0.3.1"},"directories":{"lib":"./lib/smoosh","bin":"./bin"},"main":"./index.js","engines":{"node":">= 0.4.1"},"bin":{"smoosh":"./bin/smoosh"},"_id":"smoosh@0.0.6","_engineSupported":true,"_npmVersion":"0.3.14","_nodeVersion":"v0.4.2","files":[""],"_defaultsLoaded":true,"dist":{"shasum":"5e772e57569f69b30fcd1b4a3decb3b470289b40","tarball":"http://registry.npmjs.org/smoosh/-/smoosh-0.0.6.tgz"}},"0.0.7":{"name":"smoosh","description":"a tool for packaging your javascript projects","version":"0.0.7","authors":["Jacob Thornton <@fat>","Dustin Diaz <@ded>"],"keywords":["packager","packaging","smoosher"],"dependencies":{"colors":">= 0.3.0","gzip":">= 0.1.0","jshint":">= 0.1.4","rimraf":">= 1.0.0","uglify-js":">= 0.0.1","asciimo":">= 0.3.1"},"directories":{"lib":"./lib/smoosh","bin":"./bin"},"main":"./index.js","engines":{"node":">= 0.4.1"},"bin":{"smoosh":"./bin/smoosh"},"_id":"smoosh@0.0.7","_engineSupported":true,"_npmVersion":"0.3.14","_nodeVersion":"v0.4.2","files":[""],"_defaultsLoaded":true,"dist":{"shasum":"fdf3ef505815cbc28b17265b00185a14886cae58","tarball":"http://registry.npmjs.org/smoosh/-/smoosh-0.0.7.tgz"}},"0.0.8":{"name":"smoosh","description":"a tool for packaging your javascript projects","version":"0.0.8","authors":["Jacob Thornton <@fat>","Dustin Diaz <@ded>"],"keywords":["packager","packaging","smoosher"],"directories":{"lib":"./lib/smoosh","bin":"./bin"},"main":"./index.js","engines":{"node":">= 0.4.1"},"dependencies":{"colors":">= 0.3.0","gzip":">= 0.1.0","jshint":">= 0.1.4","rimraf":">= 1.0.0","uglify-js":">= 0.0.1","asciimo":">= 0.3.1"},"bin":{"smoosh":"./bin/smoosh"},"_id":"smoosh@0.0.8","_engineSupported":true,"_npmVersion":"0.3.15","_nodeVersion":"v0.4.2","files":[""],"_defaultsLoaded":true,"dist":{"shasum":"6db166e4d03351e3dc0cbe45510a010dca8e43e4","tarball":"http://registry.npmjs.org/smoosh/-/smoosh-0.0.8.tgz"}},"0.0.9":{"name":"smoosh","description":"a tool for packaging your javascript projects","version":"0.0.9","authors":["Jacob Thornton <@fat>","Dustin Diaz <@ded>"],"keywords":["packager","packaging","smoosher"],"directories":{"lib":"./lib/smoosh","bin":"./bin"},"main":"./index.js","engines":{"node":">= 0.4.1"},"dependencies":{"colors":">= 0.3.0","gzip":">= 0.1.0","jshint":">= 0.1.4","rimraf":">= 1.0.0","uglify-js":">= 0.0.1","asciimo":">= 0.3.1"},"bin":{"smoosh":"./bin/smoosh"},"_id":"smoosh@0.0.9","_engineSupported":true,"_npmVersion":"0.3.15","_nodeVersion":"v0.4.2","files":[""],"_defaultsLoaded":true,"dist":{"shasum":"433684deba88509890b446deb3bd80cccb71872d","tarball":"http://registry.npmjs.org/smoosh/-/smoosh-0.0.9.tgz"}},"0.1.0":{"name":"smoosh","description":"a tool for packaging your javascript projects","version":"0.1.0","authors":["Jacob Thornton <@fat>","Dustin Diaz <@ded>"],"keywords":["packager","packaging","smoosher"],"directories":{"lib":"./lib/smoosh","bin":"./bin"},"main":"./index.js","engines":{"node":">= 0.4.1"},"dependencies":{"colors":">= 0.3.0","gzip":">= 0.1.0","jshint":">= 0.1.4","rimraf":">= 1.0.0","uglify-js":">= 0.0.1","asciimo":">= 0.3.1"},"bin":{"smoosh":"./bin/smoosh"},"_id":"smoosh@0.1.0","_engineSu
+silly chunk pported":true,"_npmVersion":"0.3.14","_nodeVersion":"v0.4.1","files":[""],"_defaultsLoaded":true,"dist":{"shasum":"ba38d0156f40d87f4808b2fe4cbb1c4567953ab8","tarball":"http://registry.npmjs.org/smoosh/-/smoosh-0.1.0.tgz"}},"0.1.1":{"name":"smoosh","description":"a tool for packaging your javascript projects","version":"0.1.1","authors":["Jacob Thornton <@fat>","Dustin Diaz <@ded>"],"keywords":["packager","packaging","smoosher"],"directories":{"lib":"./lib/smoosh","bin":"./bin"},"main":"./index.js","engines":{"node":">= 0.4.1"},"dependencies":{"colors":">= 0.3.0","gzip":">= 0.1.0","jshint":">= 0.1.4","rimraf":">= 1.0.0","uglify-js":">= 0.0.1","asciimo":">= 0.3.1"},"bin":{"smoosh":"./bin/smoosh"},"_id":"smoosh@0.1.1","_engineSupported":true,"_npmVersion":"0.3.18","_nodeVersion":"v0.4.2","files":[""],"_defaultsLoaded":true,"dist":{"shasum":"ac23cf071c2d2da35c31fc51a8e32398bd78df26","tarball":"http://registry.npmjs.org/smoosh/-/smoosh-0.1.1.tgz"}},"0.2.0":{"name":"smoosh","description":"a tool for packaging your javascript projects","version":"0.2.0","authors":["Jacob Thornton <@fat>","Dustin Diaz <@ded>"],"keywords":["packager","packaging","smoosher"],"directories":{"lib":"./lib/smoosh"},"main":"./index.js","engines":{"node":">= 0.4.1"},"dependencies":{"colors":">= 0.3.0","gzip":">= 0.1.0","jshint":">= 0.1.4","rimraf":">= 1.0.0","uglify-js":">= 0.0.1","asciimo":">= 0.3.1","sqwish":">= 0.0.2"},"bin":{"smoosh":"./bin/smoosh"},"devDependencies":{},"_id":"smoosh@0.2.0","_engineSupported":true,"_npmVersion":"1.0.1rc9","_nodeVersion":"v0.4.1","_defaultsLoaded":true,"dist":{"shasum":"b8e07f9f014a23aec5effff8cb98c72118835986","tarball":"http://registry.npmjs.org/smoosh/-/smoosh-0.2.0.tgz"}},"0.2.1":{"name":"smoosh","description":"a tool for packaging your javascript projects","version":"0.2.1","authors":["Jacob Thornton <@fat>","Dustin Diaz <@ded>"],"keywords":["packager","packaging","smoosher"],"directories":{"lib":"./lib/smoosh","bin":"./bin"},"main":"./index.js","engines":{"node":">= 0.4.1"},"dependencies":{"colors":">= 0.3.0","gzip":">= 0.1.0","jshint":">= 0.1.4","rimraf":">= 1.0.0","uglify-js":">= 0.0.1","asciimo":">= 0.3.1","sqwish":">= 0.0.5"},"bin":{"smoosh":"./bin/smoosh"},"_id":"smoosh@0.2.1","_engineSupported":true,"_npmVersion":"0.3.14","_nodeVersion":"v0.4.1","files":[""],"_defaultsLoaded":true,"dist":{"shasum":"7b034d1417c009721a045e17184d3e4d690a27e2","tarball":"http://registry.npmjs.org/smoosh/-/smoosh-0.2.1.tgz"}},"0.2.2":{"name":"smoosh","description":"a tool for packaging your javascript projects","version":"0.2.2","authors":["Jacob Thornton <@fat>","Dustin Diaz <@ded>"],"keywords":["packager","packaging","smoosher"],"directories":{"lib":"./lib/smoosh"},"main":"./index.js","engines":{"node":">= 0.4.1"},"dependencies":{"colors":">= 0.3.0","gzip":">= 0.1.0","jshint":">= 0.1.4","rimraf":">= 1.0.0","uglify-js":">= 0.0.1","asciimo":">= 0.3.1","sqwish":">= 0.0.5"},"bin":{"smoosh":"./bin/smoosh"},"devDependencies":{},"_id":"smoosh@0.2.2","_engineSupported":true,"_npmVersion":"1.0.6","_nodeVersion":"v0.4.2","_defaultsLoaded":true,"dist":{"shasum":"8ca06960a22cc87fe8385961d6be6cb20ea4e649","tarball":"http://registry.npmjs.org/smoosh/-/smoosh-0.2.2.tgz"},"scripts":{}},"0.3.0":{"name":"smoosh","preferGlobal":"true","description":"a tool for packaging your JavaScript and CSS projects","version":"0.3.0","authors":["Jacob Thornton <@fat>","Dustin Diaz <@ded>"],"keywords":["packager","packaging","smoosher","javascript","css","dependencies"],"directories":{"lib":"./lib/smoosh"},"main":"./index.js","engines":{"node":">= 0.4.1"},"dependencies":{"colors":">= 0.3.0","gzip":">= 0.1.0","jshint":">= 0.1.4","rimraf":">= 1.0.0","uglify-js":">= 0.0.1","asciimo":">= 0.3.1","sqwish":">= 0.0.6"},"bin":{"smoosh":"./bin/smoosh"},"devDependencies":{},"_id":"smoosh@0.3.0","_engineSupported":true,"_npmVersion":"1.0.6","_nodeVersion":"v0.5.0-pre","_defaultsLoaded":true,"dist":{"shasum":"df3c960a6a22e1b81c2f47aad8d212d3e41781dc","tarball":"http://registry.npmjs.org/smoosh/-/smoosh-0.3.0.tgz"},"scripts":{}}},"maintainers":[{"name":"fat","email":"jacobthornton@gmail.com"},{"name":"ded","email":"polvero@gmail.com"}],"time":{"0.0.1":"2011-03-05T04:34:47.042Z","0.0.2":"2011-03-05T04:40:50.040Z","0.0.3":"2011-03-05T04:58:26.210Z","0.0.4":"2011-03-05T05:08:55.340Z","0.0.5":"2011-03-05T19:46:12.293Z
+silly chunk ","0.0.6":"2011-03-10T00:34:42.957Z","0.0.7":"2011-03-10T01:00:08.986Z","0.0.8":"2011-03-12T08:17:54.817Z","0.0.9":"2011-03-23T03:41:50.925Z","0.1.0":"2011-04-10T03:54:26.243Z","0.1.1":"2011-04-12T21:28:19.545Z","0.2.0":"2011-04-24T03:51:38.919Z","0.2.1":"2011-04-24T23:14:13.856Z","0.2.2":"2011-05-20T17:18:07.602Z","0.3.0":"2011-05-24T03:35:04.827Z"}}
+info Already published smoosh@0.3.0
+verbose uploading bin dists []
+ERR! publish fail Cannot publish over existing version.
+ERR! publish fail Bump the 'version' field, set the --force flag, or
+ERR! publish fail     npm unpublish 'smoosh@0.3.0'
+ERR! publish fail and try again
+ERR! 
+ERR! System Darwin 10.8.0
+ERR! command "node" "/usr/local/bin/npm" "publish"
+verbose exit [ 1, true ]
