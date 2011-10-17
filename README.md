@@ -143,7 +143,7 @@ smoosh.analyze(); //which will do analyze all types
 
 <code>done</code>
 -------
-Done is used to execute a callback when at a certain point in the smoosh command chain. Normally, it is added at the end of the chain to run a callback when smoosh has completed, but it can also be added between steps.
+Done is used to execute a callback at a certain point in the smoosh command chain. Typically, it is used at the end of the chain when smoosh has completed, but it can also be added between steps.
 
 ``` js
 smoosh.config('smoosh.json').clean().run().build.done(function() {
