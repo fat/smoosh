@@ -7,10 +7,9 @@
   , "keywords": ["packager", "packaging", "smoosher", "javascript", "css", "dependencies"]
   , "directories": { "lib": "./lib/smoosh" }
   , "main": "./index.js"
-  , "engines": { "node": ">= 0.4.1" }
+  , "engines": { "node": ">= 0.6.0" }
   , "dependencies": {
     "colors": ">= 0.3.0"
-    , "gzip": ">= 0.1.0"
     , "jshint": ">= 0.1.4"
     , "rimraf": ">= 1.0.0"
     , "uglify-js": ">= 0.0.1"
