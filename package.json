@@ -2,7 +2,7 @@
   "name": "smoosh"
   , "preferGlobal": "true"
   , "description": "a tool for packaging your JavaScript and CSS projects"
-  , "version": "0.3.2"
+  , "version": "0.4.0"
   , "authors": ["Jacob Thornton <@fat>", "Dustin Diaz <@ded>"]
   , "keywords": ["packager", "packaging", "smoosher", "javascript", "css", "dependencies"]
   , "directories": { "lib": "./lib/smoosh" }
@@ -12,7 +12,7 @@
     "colors": ">= 0.3.0"
     , "jshint": ">= 0.1.4"
     , "rimraf": ">= 1.0.0"
-    , "uglify-js": ">= 0.0.1"
+    , "uglify-js": "~1.3.4"
     , "sqwish": ">= 0.0.6"
   }
   , "bin": {
