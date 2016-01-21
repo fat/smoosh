@@ -3,6 +3,7 @@
   , "description": "a tool for packaging your JavaScript and CSS projects"
   , "version": "0.4.1"
   , "authors": ["Jacob Thornton <@fat>", "Dustin Diaz <@ded>"]
+  , "homepage": "https://github.com/fat/smoosh"
   , "keywords": ["packager", "packaging", "smoosher", "javascript", "css", "dependencies"]
   , "directories": { "lib": "./lib/smoosh" }
   , "main": "./index.js"
